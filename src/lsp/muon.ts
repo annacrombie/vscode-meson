@@ -1,7 +1,7 @@
 import * as vscode from "vscode";
 
-import type { Executable } from "vscode-languageclient/node";
-import { LanguageServerClient } from "../lsp";
+import type { Executable } from "vscode-languageclient/node.js";
+import { LanguageServerClient } from "../lsp/index.js";
 
 export class MuonLanguageClient extends LanguageServerClient {
   get runExe(): Executable {
